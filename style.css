@@ -1,0 +1,215 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+
+/* logo and image */
+#logo{
+    margin: 34px 45px;
+}
+#logo img{
+    height: 56px;
+    margin: -25px -24px;
+}
+ /* navigation bar list styling */
+
+ #navbar ul{
+    display: flex;
+    font-family: 'Lobster', cursive;
+ }
+
+ #navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 95%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+ }
+
+ #navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+ }
+
+ #navbar ul li a{
+   color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+ }
+    
+ #navbar ul li a:hover{
+   color: black;
+   background-color: white;
+ }
+
+
+ /* home section */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 443px;
+    justify-content: center;
+    align-items: center;   
+ }
+ #home::before{
+    content: "";
+    position: absolute;
+    background: url('../charcuterie.jpg.jpg') no-repeat center center/cover ;
+    height: 78%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+ }
+ #home h1{
+   color: white;
+   text-align: center;
+   font-family: 'Patrick Hand', cursive;
+ }
+ #home  p{
+   color: white;
+   text-align: center;
+   font-size: 1.5rem;
+   font-family: 'Patrick Hand', cursive;
+ }
+
+ /* services section */
+ #services{
+   margin: 34px;
+   display: flex;
+ }
+
+ #services .box{ 
+   border: 2px solid brown;
+   margin: 3px 5px;
+   padding: 34px;
+   border-radius: 23px;
+    background-color: #d7bec7;
+ }
+
+ #services .box img{
+   height: 100px;
+   margin: auto;
+   display: block;
+ }
+
+ #services .box p{
+  font-family: 'Patrick Hand', cursive;
+ }
+ /* client section */
+ #client-section{
+ height: 340px;
+ }
+ #client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../platter.jpg.jpg');
+ width: 100%;
+ height: 45%;
+ z-index: -1;
+ opacity: 0.4;
+ }
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#client img{
+  display: block;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  float: left;
+  padding: 67px;
+}
+/* contact section */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('../telephone.jpg.jpg') no-repeat center center/cover;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box form{
+  width: 80%;
+}
+#contact-box label{
+font-size: 1.3rem;
+font-family: 'Lobster', cursive;
+
+}
+footer{
+  background: rgb(194, 148, 148);
+ color: white;
+ padding: 9px 457px;
+}
+ /* utility classes */
+ .h-primary{
+   font-size: 2.8rem;
+   padding: 12px 30px;
+   font-family: 'Patrick Hand', cursive;
+   text-align: center; 
+ }
+
+ .h-secnodary{
+   font-size: 2.5rem;
+   padding: 17px;
+   font-family: 'Patrick Hand', cursive;
+ }
+
+ .btn{
+   padding: 6px 20px;
+   border: 2px solid burlywood;
+   background-color: aqua;
+   color: blueviolet;
+   margin: 16px;
+   font-size: 1.2rem;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+
+    
